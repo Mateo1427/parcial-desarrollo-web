@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stanford University</title>
+    <link rel="stylesheet" href="../css/header_footer_styles.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/index.js" defer></script>
+    <script src="../js/header_footer.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo_container">
+                <img src="../img/logo_menu.png" alt="stanford-logo-menu" />
+                <h1>Stanford</h1>
+            </div>
+            <div class="menu_options">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./programs.html">Facultades</a></li>
+                    <li><a href="./campus.html">Campus</a></li>
+                    <li><a href="./admissions.html">Admisiones</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                </ul>
+                <div class="menu-buttons">
+                    <ul>
+                        <li><a href="./login.html"><button>Login</button></a></li>
+                        <li><a href="./register.html"><button>Registro</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="hide-show-btns">
+            <!-- <li><a><button onclick="hideMenu()">Ocultar Menú</button></a></li> -->
+            <li><a><button id="hide-btn">Ocultar Menú</button></a></li>
+
+            <!-- <li><a><button onclick="showMenu()">Mostrar Menú</button></a></li> -->
+            <li><a><button id="show-btn">Mostrar Menú</button></a></li>
+        </ul>
+        <div class="img_presentation">
+            <img src="../img/campus_index.jpg" alt="stanford-campus" />
+        </div>
+        <b>
+            <hr>
+            <b>
+    </header>
+    <main>
+        <div class="us">
+            <div class="us_content">
+                <h2>Avanzando en la frontera</h2>
+                <p>
+                    En Stanford, un espíritu de optimismo y posibilidades impulsa nuestra misión de descubrimiento y
+                    aprendizaje. Aquí encontrarás un espacio de amplitud intelectual, perspectivas diversas y libertad
+                    para explorar nuevas líneas de pensamiento. Rebosante de ideas e innovación, abordando las preguntas
+                    con apertura y curiosidad, buscando la excelencia en todo lo que hacemos: esto es Stanford.
+                </p>
+            </div>
+            <img src="../img/library.jpg" alt="biblioteca" class="content_image">
+        </div>
+        <div class="info_container">
+            <div class="mision_vision">
+                <div class="mision">
+                    <h3>Misión</h3>
+                    <p>
+                        Crear y compartir conocimiento a través de una investigación
+                        profunda y de vanguardia.
+                    </p>
+                    <p>
+                        Preparar a los estudiantes para que sean curiosos, desarrollen pensamiento
+                        crítico y resuelvan problemas complejos.
+                    </p>
+                    <p>
+                        Combinar teoría y práctica para llevar los descubrimientos de las
+                        aulas y laboratorios hacia la sociedad.
+                    </p>
+                </div>
+                <div class="vision">
+                    <h3>Visión</h3>
+                    <p>
+                        Acelerar el impacto positivo en el mundo impulsados por el optimismo,
+                        la ingenuidad y el sentido de responsabilidad.
+                    </p>
+                    <p>
+                        Fomentar una cultura de debate constructivo, libertad de pensamiento e
+                        innovación constante.
+                    </p>
+                    <p>
+                        Preparar a las nuevas generaciones para prosperar y adaptarse a un futuro
+                        dinámico y cambiante.
+                    </p>
+                </div>
+            </div>
+            <div class="information">
+                <h3>Solicitud de Información</h3>
+                <form id="my-form">
+                    <label for="">Nombre: </label>
+                    <input type="text" placeholder="Tu nombre" id="name">
+                    <br>
+                    <label for="">Correo: </label>
+                    <input type="email" placeholder="tucorreo@correo.com" id="email">
+                    <br>
+                    <label for="">Ciudad: </label>
+                    <input type=" text" placeholder="Ciudad" id="city">
+                    <br>
+                    <label for="">Celular: </label>
+                    <input type="tel" placeholder="123 456 7890" id="phone-number">
+                    <br>
+                    <label for="">Programa: </label>
+                    <select name="" id="program">
+                        <option>Ingenieria y tecnología</option>
+                        <option>Ciencias económicas, administrativas y contables</option>
+                        <option>Ciencias de la educación</option>
+                        <option>Ciencias de la salud</option>
+                        <option>Ciencias básicas, humanas y artes</option>
+                        <option>Modalidad virtual / distancia</option>
+                    </select>
+                    <hr>
+                    <div class="buttons_form">
+                        <input type="submit" value="Enviar" onclick="showDataForm('name', 'program', 'email')">
+                        <input type="reset" value="Limpiar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <b>
+            <hr>
+            <b>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="logo_footer">
+                <img src="../img/logo_footer.png" alt="stanford-logo-footer">
+                <p><em>Todos los derechos reservados.</em></p>
+            </div>
+            <div class="social">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="https://web.facebook.com/Stanford/?_rdc=1&_rdr#">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/stanford/">Instagram</a></li>
+                    <li><a href="https://x.com/Stanford">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/stanford">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="more_options">
+                <h3>Más opciones</h3>
+                <ul>
+                    <li><a href="/contact.html">Contacto</a></li>
+                    <li><a href="/privacy.html">Politicas de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

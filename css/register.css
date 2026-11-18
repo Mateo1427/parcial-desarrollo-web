@@ -1,0 +1,69 @@
+label {
+    font-weight: bolder;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.register_section {
+    display: flex;
+    flex-direction: column;
+    background-color: #C34A4A;
+    width: 400px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 4px 4px grey;
+    align-items: center;
+}
+
+.register_section .register_info form{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.register_section .register_info input[type="text"], 
+.register_section .register_info input[type="email"], 
+.register_section .register_info input[type="tel"], 
+.register_section .register_info input[type="number"], 
+.register_section .register_info input[type="date"], 
+.register_section .register_info input[type="password"] {
+    width: 300px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.buttons_form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.buttons_form input[type="reset"],
+.buttons_form input[type="button"],
+.buttons_form input[type="submit"] {
+    border-radius: 8px;
+    padding: 4px;
+    width: 220px;
+    transition: transform 0.5s ease;
+}
+
+.buttons_form input[type="reset"]:hover,
+.buttons_form input[type="button"]:hover,
+.buttons_form input[type="submit"]:hover {
+    background-color: grey;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.register_section img {
+    padding: 10px;
+    width: 200px;
+}

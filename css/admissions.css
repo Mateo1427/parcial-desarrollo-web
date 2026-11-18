@@ -1,0 +1,96 @@
+label {
+    font-weight: bolder;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 46px;
+}
+
+.admissions_info {
+    display: flex;
+    flex-direction: column;
+    background-color: #D3D3D3;
+    width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 4px 4px grey;
+    align-items: center;
+}
+
+.admissions_info table {
+    /* border-spacing: 30px 10px; */
+    display: block;
+    border-collapse: separate;
+    border-spacing: 0;
+    justify-self: center;
+    padding: 10px;
+}
+
+.admissions_info th,
+td {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.table-titles th {
+    background-color: #C34A4A;
+}
+
+th {
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+td {
+    background-color: whitesmoke;
+    text-align: center;
+    width: 130px;
+}
+
+/* Esquina superior izquierda */
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+/* Esquina superior derecha */
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+/* Esquina inferior izquierda */
+tr:last-child th:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+/* Esquina inferior derecha */
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 24px;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .admissions_info {
+        width: 480px;
+    }
+
+
+    .admissions_info table {
+        width: 480px;
+    }
+
+    .admissions_info th,
+    td {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+}

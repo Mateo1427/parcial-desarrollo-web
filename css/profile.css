@@ -1,0 +1,80 @@
+label {
+    font-weight: bolder;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+
+.profile_section {
+    display: flex;
+    flex-direction: column;
+    background-color: #C34A4A;
+    width: 400px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 4px 4px grey;
+    align-items: center;
+}
+
+.profile_section .profile_info form{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 260px
+}
+
+.profile_section .profile_info input[type="text"], 
+.profile_section .profile_info input[type="number"], 
+.profile_section .profile_info input[type="email"], 
+.profile_section .profile_info input[type="tel"], 
+.profile_section .profile_info input[type="date"], 
+.profile_section .profile_info input[type="password"] {
+    width: 260px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.buttons_form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.buttons_form input[type="reset"],
+.buttons_form button {
+    border-radius: 8px;
+    padding: 4px;
+    width: 160px;
+    transition: transform 0.5s ease;
+}
+
+.buttons_form input[type="reset"]:hover,
+.buttons_form button:hover {
+    background-color: grey;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.profile_section p,
+.profile_section a {
+    padding-top: 4px;
+    font-size: small;
+}
+
+.profile_section a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+#photo {
+    width: 160px;
+    align-self: center;
+    padding: 4px;
+}

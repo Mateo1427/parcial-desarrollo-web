@@ -1,0 +1,31 @@
+main h2 {
+    align-self: center;
+    justify-self: center;
+}
+
+#students-table{
+    display: block;
+    border-collapse: separate;
+    border-spacing: 0;
+    justify-self: center;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+#students-table th,
+td {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+.table-titles th {
+    background-color: #C34A4A;
+    width: 160px;
+}
+
+#students-table td {
+    background-color: whitesmoke;
+    text-align: center;
+    width: 130px;
+}
+

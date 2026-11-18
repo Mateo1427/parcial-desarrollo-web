@@ -1,0 +1,220 @@
+.programs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.programs-container-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.programs-container-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    gap: 60px;
+    align-items: stretch;
+}
+
+.programs-card {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #C34A4A;
+    box-shadow: inset 0 0 4px 4px grey;
+    width: 340px;
+    min-height: 420px;
+    text-align: center;
+}
+
+.programs-card h3 {
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.programs-card img {
+    width: 280px;
+    height: 220px;
+    border-radius: 20px;
+    padding: 8px;
+}
+
+.programs-card p {
+    color: black;
+    font-weight: 100;
+    width: 340px;
+    height: 80px;
+}
+
+.card-btns {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    margin-top: auto;
+}
+
+.js-buttons, 
+.btn-course-dates {
+    color: black;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: black;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 14px;
+    transition: transform 0.5s ease;
+    width: 88px;
+}
+
+.js-buttons:hover,
+.btn-course-dates:hover {
+    background-color: grey;
+    transform: scale(1.1);
+}
+
+.card-extended {
+    height: 520px !important;
+    background-color: #c02828;
+    box-shadow: inset 0 0 16px 4px whitesmoke;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: whitesmoke;
+    padding: 40px;
+    box-shadow: inset 0 0 16px 4px black;
+    border-radius: 18px;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    margin: 100px auto;
+}
+
+.modal-content h2 {
+    margin: 0px;
+    padding: 6px;
+}
+
+.modal-content table {
+    display: block;
+    border-collapse: separate;
+    border-spacing: 0;
+    justify-self: center;
+    padding: 14px;
+}
+
+.modal-content th,
+td {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #C34A4A;
+}
+
+td {
+    background-color: grey;
+}
+
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+.modal-content button {
+    color: black;
+    background-color: whitesmoke;
+    border: 2px solid;
+    border-color: black;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 14px;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    width: 140px;
+}
+
+.modal-content button:hover {
+    background-color: grey;
+    transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+    .programs-container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .programs-card {
+        width: 340px;
+        height: 400px;
+    }
+
+    .programs-card img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h2 {
+        font-size: 26px;
+        margin: 8px;
+    }
+
+    .programs-container-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .programs-card {
+        width: 220px;
+        height: 300px;
+    }
+
+    .programs-card h3 {
+        font-size: 18px;
+    }
+
+    .programs-card img {
+        width: 90%;
+        height: 140px;
+    }
+}

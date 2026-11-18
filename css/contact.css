@@ -1,0 +1,84 @@
+label {
+    font-weight: bolder;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 52.4px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+    background-color: #D3D3D3;
+    width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 4px 4px grey;
+    align-items: center;
+}
+
+.contact_info table {
+    /* border-spacing: 30px 10px; */
+    display: block;
+    border-collapse: collapse;
+    border-collapse: separate;
+    border-spacing: 0;
+    justify-self: center;
+    padding: 14px;
+}
+
+.contact_info th,
+td {
+    padding: 10px 20px;
+    border: 1px solid black;
+}
+
+th {
+    background-color: #C34A4A;
+}
+
+td {
+    background-color: whitesmoke;
+}
+
+/* Esquina superior izquierda */
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+/* Esquina superior derecha */
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+/* Esquina inferior izquierda */
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+/* Esquina inferior derecha */
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 600px) {
+
+    .contact_info {
+        width: 440px;
+    }
+
+
+    .contact_info table {
+        width: 480px;
+    }
+
+    .contact_info th,
+    td {
+        padding: 4px 8px;
+        border: 1px solid grey;
+    }
+}

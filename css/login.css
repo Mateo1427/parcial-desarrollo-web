@@ -1,0 +1,73 @@
+label {
+    font-weight: bolder;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+}
+
+.login_section {
+    display: flex;
+    flex-direction: column;
+    background-color: #C34A4A;
+    width: 300px;
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: inset 0 0 4px 4px grey;
+    align-items: center;
+}
+
+.login_section .login_info form{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.login_section .login_info input[type="text"], 
+.login_section .login_info input[type="password"] {
+    width: 200px;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.buttons_form {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.buttons_form input[type="reset"],
+.buttons_form button {
+    border-radius: 8px;
+    padding: 4px;
+    width: 160px;
+    transition: transform 0.5s ease;
+}
+
+.buttons_form input[type="reset"]:hover,
+.buttons_form button:hover {
+    background-color: grey;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.login_section p,
+.login_section a {
+    padding-top: 4px;
+    font-size: small;
+}
+
+.login_section a:hover {
+    color: whitesmoke;
+    text-decoration: underline;
+}
+
+.login_section img {
+    width: 140px;
+}

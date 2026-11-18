@@ -1,0 +1,10 @@
+{
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.ignoreFiles": [
+        "**/*.db",
+        "**/*.db-journal",
+        "**/*.db-wal",
+        "**/*.db-shm",
+        "**/node_modules/**"
+    ]
+}

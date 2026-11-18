@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stanford University</title>
+    <link rel="stylesheet" href="../css/header_footer_styles.css">
+    <link rel="stylesheet" href="../css/programs.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/programs.js" defer></script>
+    <script src="../js/header_footer.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo_container">
+                <img src="../img/logo_menu.png" alt="stanford-logo-menu" />
+                <h1>Stanford</h1>
+            </div>
+            <div class="menu_options">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./programs.html">Facultades</a></li>
+                    <li><a href="./campus.html">Campus</a></li>
+                    <li><a href="./admissions.html">Admisiones</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                </ul>
+                <div class="menu-buttons">
+                    <ul>
+                        <li><a href="./login.html"><button>Login</button></a></li>
+                        <li><a href="./register.html"><button>Registro</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <ul class="hide-show-btns">
+            <li><a><button id="hide-btn">Ocultar Menú</button></a></li>
+            <li><a><button id="show-btn">Mostrar Menú</button></a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="programs-section">
+            <h2>Nuestras Facultades</h2>
+            <div class="programs-container-cards">
+                <div class="programs-card">
+                    <h3 id='title-program'>Ingenieria y tecnología</h3>
+                    <img src="../img/engineering-building.jpg" alt="facultad-ingeniería">
+                    <p>
+                        Un referente global en tecnología y ciencias de la computación,
+                        cuna de fundadores de grandes empresas tecnológicas como Google.
+                    </p>
+                    <p class="more-info">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966
+                    </p>
+                    <!-- <button class="js-buttons" id="js-button-engineering" onclick="showMore('title-engineering')">Ver -->
+                    <div class="card-btns">
+                        <button class="js-buttons">Ver más</button>
+                        <button class="btn-course-dates">Ver fechas</button>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h2>Fechas importantes</h2>
+                            <h3>Ingenieria y tecnología</h3>
+                            <table>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Fecha</th>
+                                </tr>
+                                <tr>
+                                    <td>Inicio clases</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Primeros parciales</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Segundos parciales</td>
+                                    <td>08/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Terceros parciales</td>
+                                    <td>14/10/2026</td>
+                                </tr>
+                            </table>
+                            <button class="btn-close-modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="programs-card">
+                    <h3 id='title-program'>Ciencias económicas, administrativas y contables</h3>
+                    <img src="../img/business-building.jpeg" alt="facultad-economia">
+                    <p>
+                        Enfocada en la gestión empresarial y el liderazgo global, es considerada una
+                        de las mejores del mundo por su cultura de innovación y emprendimiento.
+                    </p>
+                    <p class="more-info">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966
+                    </p>
+                    <!-- <button class="js-buttons" id="js-button-business" onclick="showMore('title-business')"> -->
+                    <div class="card-btns">
+                        <button class="js-buttons">Ver más</button>
+                        <button class="btn-course-dates">Ver fechas</button>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h2>Fechas importantes</h2>
+                            <h3>Ciencias económicas, administrativas y contables</h3>
+                            <table>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Fecha</th>
+                                </tr>
+                                <tr>
+                                    <td>Inicio clases</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Primeros parciales</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Segundos parciales</td>
+                                    <td>08/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Terceros parciales</td>
+                                    <td>14/10/2026</td>
+                                </tr>
+                            </table>
+                            <button class="btn-close-modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="programs-card">
+                    <h3 id='title-program'>Ciencias de la educación</h3>
+                    <img src="../img/education-building.jpg" alt="facultad-educación">
+                    <p>
+                        Centrada en mejorar la práctica educativa,
+                        la política de enseñanza y el aprendizaje mediante la investigación aplicada.
+                    </p>
+                    <p class="more-info">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966
+                    </p>
+                    <!-- <button class="js-buttons" id="js-button-education" onclick="showMore('title-education')">Ver -->
+                    <div class="card-btns">
+                        <button class="js-buttons">Ver más</button>
+                        <button class="btn-course-dates">Ver fechas</button>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h2>Fechas importantes</h2>
+                            <h3>Ciencias de la educación</h3>
+                            <table>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Fecha</th>
+                                </tr>
+                                <tr>
+                                    <td>Inicio clases</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Primeros parciales</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Segundos parciales</td>
+                                    <td>08/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Terceros parciales</td>
+                                    <td>14/10/2026</td>
+                                </tr>
+                            </table>
+                            <button class="btn-close-modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="programs-card">
+                    <h3 id="title-program">Ciencias de la salud</h3>
+                    <img src="../img/medicine-building.jpg" alt="facultad-medicina">
+                    <p>
+                        Enfocada en la investigación biomédica,
+                        la práctica clínica avanzada y la formación de profesionales de la salud.
+                    </p>
+                    <p class="more-info">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966
+                    </p>
+                    <!-- <button class="js-buttons" id="js-button-medicine" onclick="showMore('title-medicine')">Ver -->
+                    <div class="card-btns">
+                        <button class="js-buttons">Ver más</button>
+                        <button class="btn-course-dates">Ver fechas</button>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h2>Fechas importantes</h2>
+                            <h3>Ciencias de la salud</h3>
+                            <table>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Fecha</th>
+                                </tr>
+                                <tr>
+                                    <td>Inicio clases</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Primeros parciales</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Segundos parciales</td>
+                                    <td>08/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Terceros parciales</td>
+                                    <td>14/10/2026</td>
+                                </tr>
+                            </table>
+                            <button class="btn-close-modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="programs-card">
+                    <h3 id="title-program">Ciencias básicas, humanas y artes</h3>
+                    <img src="../img/arts-and-sciences-building.jpg" alt="facultad-artes">
+                    <p>
+                        Es la base académica más grande de la universidad,
+                        abarcando desde artes y letras hasta ciencias sociales y exactas.
+                    </p>
+                    <p class="more-info">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966
+                    </p>
+                    <!-- <button class="js-buttons" id="js-button-arts" onclick="showMore('title-arts')">Ver más</button> -->
+                    <div class="card-btns">
+                        <button class="js-buttons">Ver más</button>
+                        <button class="btn-course-dates">Ver fechas</button>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h2>Fechas importantes</h2>
+                            <h3>Ciencias básicas, humanas y artes</h3>
+                            <table>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Fecha</th>
+                                </tr>
+                                <tr>
+                                    <td>Inicio clases</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Primeros parciales</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Segundos parciales</td>
+                                    <td>08/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Terceros parciales</td>
+                                    <td>14/10/2026</td>
+                                </tr>
+                            </table>
+                            <button class="btn-close-modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="programs-card" id="card-virtual">
+                    <h3 id="title-program">Modalidad virtual / distancia</h3>
+                    <img src="../img/programs.jpg" alt="modalidad-virtual">
+                    <p>
+                        El modelo virtual de Stanford se basa en una filosofía clara:
+                        no es una universidad virtual aislada, sino una extensión
+                        directa de su campus físico.
+                    </p>
+                    <p class="more-info">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since 1966
+                    </p>
+                    <!-- <button class="js-buttons" id="js-button-virtual" onclick="showMore('title-virtual')">Ver más</button> -->
+                    <div class="card-btns">
+                        <button class="js-buttons">Ver más</button>
+                        <button class="btn-course-dates">Ver fechas</button>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <h2>Fechas importantes</h2>
+                            <h3>Modalidad virtual / distancia</h3>
+                            <table>
+                                <tr>
+                                    <th>Evento</th>
+                                    <th>Fecha</th>
+                                </tr>
+                                <tr>
+                                    <td>Inicio clases</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Primeros parciales</td>
+                                    <td>01/08/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Segundos parciales</td>
+                                    <td>08/09/2026</td>
+                                </tr>
+                                <tr>
+                                    <td>Terceros parciales</td>
+                                    <td>14/10/2026</td>
+                                </tr>
+                            </table>
+                            <button class="btn-close-modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+    </main>
+    <footer>
+        <div class="footer_container">
+            <div class="logo_footer">
+                <img src="../img/logo_footer.png" alt="stanford-logo-footer">
+                <p><em>Todos los derechos reservados.</em></p>
+            </div>
+            <div class="social">
+                <h3>Redes</h3>
+                <ul>
+                    <li><a href="https://web.facebook.com/Stanford/?_rdc=1&_rdr#">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/stanford/">Instagram</a></li>
+                    <li><a href="https://x.com/Stanford">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/stanford">Youtube</a></li>
+                </ul>
+            </div>
+            <div class="more_options">
+                <h3>Más opciones</h3>
+                <ul>
+                    <li><a href="/contact.html">Contacto</a></li>
+                    <li><a href="/privacy.html">Politicas de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
